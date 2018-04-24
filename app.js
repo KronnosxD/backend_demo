@@ -3,7 +3,8 @@
 var express = require('express');
 var app = express();
 
-var ex_routes = require('./routes/user');
+var user_routes = require('./routes/user');
+
 app.use((req, res, next) => {
     res.header('Access-Control-Allow-Origin', '*');
     res.header('Access-Control-Allow-Headers', 'Authotization, X-API-KEY, Origin, -X-Requested-With, Content-Type, Accept, Access-Control-Allow-Request-Method');
@@ -13,5 +14,5 @@ app.use((req, res, next) => {
     next();
 });
 
-app.use('/api', ex_routes);
+app.use('/api', user_routes);
 module.exports = app;
