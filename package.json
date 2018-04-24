@@ -1,0 +1,30 @@
+{
+  "name": "backend_demo",
+  "version": "1.0.0",
+  "description": "",
+  "engines": {"node": ">=4.3.2"},
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "deploy": "gcloud app deploy",
+    "lint": "repo-tools lint",
+    "pretest": "npm run lint",
+    "system-test": "repo-tools test app",
+    "e2e-test": "repo-tools test deploy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KronnosxD/backend_demo.git"
+  },
+  "author": "niav",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KronnosxD/backend_demo/issues"
+  },
+  "homepage": "https://github.com/KronnosxD/backend_demo#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3"
+  }
+}
