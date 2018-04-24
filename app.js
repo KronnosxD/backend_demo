@@ -1,6 +1,6 @@
 'use strict'
 
-var express = requre('express');
+var express = require('express');
 var app = express();
 
 var ex_routes = require('./routes/user');
