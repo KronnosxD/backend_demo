@@ -2,7 +2,9 @@
   "name": "backend_demo",
   "version": "1.0.0",
   "description": "",
-  "engines": {"node": ">=4.3.2"},
+  "engines": {
+    "node": ">=4.3.2"
+  },
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -24,6 +26,8 @@
   },
   "homepage": "https://github.com/KronnosxD/backend_demo#readme",
   "dependencies": {
+    "@google-cloud/datastore": "^1.4.0",
+    "@google-cloud/storage": "^1.6.0",
     "body-parser": "^1.18.2",
     "express": "^4.16.3"
   }
